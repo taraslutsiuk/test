@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, height=device-height initial-scale=1.0">
+  <title>Назва сторінки</title>
+  <meta name="description" content="Короткий опис сторінки для пошукових систем">
+<style>
+.fade-text {
+  opacity: 0;
+  animation: fadeIn 3s forwards;
+}
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+
+.color-text {
+  animation: colorChange 4s infinite;
+}
+@keyframes colorChange {
+  0%   { color: red; }
+  50%  { color: blue; }
+  100% { color: green; }
+}
+
+
+.rotate-text {
+  display: inline-block;
+  animation: rotate 3s infinite linear;
+}
+@keyframes rotate {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+
+
+.typing {
+  width: 0;
+  overflow: hidden;
+  border-right: 2px solid;
+  animation: typing 4s steps(20) forwards, blink 0.7s infinite;
+}
+@keyframes typing {
+  from { width: 0; }
+  to   { width: 15ch; }
+}
+@keyframes blink {
+  50% { border-color: transparent; }
+}
+
+
+
+
+
+
+</style>
+</head>
+
+<body>
+
+      
+<p class='fade-text'>Приклад анімації 1</p>
+<p class='color-text'>Приклад анімації 2</p>
+<p class='rotate-text'>Приклад анімації 3</p>
+<p class='typing'>Приклад анімації 4</p>
+
+
+</body>
+</html>
